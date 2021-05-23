@@ -1,0 +1,13 @@
+.gallery {
+  display: none;
+  padding-bottom: 95px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  text-align: center;
+  position: relative;
+}

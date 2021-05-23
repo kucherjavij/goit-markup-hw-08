@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  align-items: center;
+  color: var(--titles-color);
+  margin-right: auto;
+}
+
+.nav__link {
+  display: block;
+  position: relative;
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1.5px;
+
+    background: var(--accent-color);
+    border-radius: 2px;
+
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

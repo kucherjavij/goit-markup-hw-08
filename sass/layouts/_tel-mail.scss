@@ -1,0 +1,17 @@
+.tel-mail {
+  display: flex;
+}
+
+.tel-mail__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.tel-mail__link {
+  display: flex;
+  align-items: center;
+}
+
+.tel-mail__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

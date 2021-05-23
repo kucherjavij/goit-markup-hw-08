@@ -1,0 +1,16 @@
+.address {
+  font-style: inherit;
+}
+
+.address__link {
+  color: var(--dark-bg-text);
+}
+
+.address__item a {
+  color: var(--mail-tel-color);
+}
+
+.address__item {
+  display: flex;
+  margin-top: 10px;
+}
