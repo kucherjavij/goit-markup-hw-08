@@ -430,13 +430,23 @@ p {
   color: var(--titles-color);
 }
 
-.mobile-menu__item {
+.mobile-menu__btn--icon-close {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu__item:hover, .mobile-menu__item:focus {
+.mobile-menu__btn--icon-close:hover, .mobile-menu__btn--icon-close:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__btn--icon-menu {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__btn--icon-menu:hover, .mobile-menu__btn--icon-menu:focus {
   color: var(--accent-color);
 }
 
