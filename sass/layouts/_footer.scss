@@ -5,15 +5,35 @@
 
 .footer__logo {
   display: flex;
+
+  justify-content: center;
   margin-bottom: 20px;
   margin-right: auto;
+
   padding: 0;
   color: var(--dark-bg-text);
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__container--small {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer__socials {

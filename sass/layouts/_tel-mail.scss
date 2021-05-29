@@ -1,14 +1,31 @@
 .tel-mail {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .tel-mail__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: 0;
+  }
   margin-right: 50px;
 }
 
-.tel-mail__link {
+.tel-mail__item .tel-mail__link {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .tel-mail__icon {

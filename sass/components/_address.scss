@@ -12,5 +12,9 @@
 
 .address__item {
   display: flex;
+  justify-content: center;
   margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }

@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Шапка страницы -->
-    <!-- <header class="head">
+    <header class="head">
       <div class="container head__container">
         <nav class="nav">
           <a class="logo head__logo" lang="en" href="">
@@ -61,8 +61,54 @@
             >
           </li>
         </ul>
+        <button class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__btn--icon cursors" width="40" height="40">
+            <use class="mobile-menu__btn--icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+            <use class="mobile-menu__btn--icon-close" href="./images/icons/sprite.svg#icon-drop-cross"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu" data-menu>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item mobile-menu__current-page">
+              <a class="link" href="">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a
+                class="link"
+                href="./portfolio/portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-tel-mail list">
+            <li class="mobile-tel-mail__item--tel">
+              <a class="tel-mail__link link" href="tel:+380961111111">
+                
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-tel-mail__item--mail">
+              <a
+                class="tel-mail__link link "
+                href="mailto:info@devstudio.com"
+              >
+                
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials__list list">
+            <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Instagram</a></li>
+            <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Twitter</a></li>
+            <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Facebook</a></li>
+            <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">LinkedIn</a></li>
+          </ul>
+      </div>
+    </header>
     <!-- Уникальный контент -->
     <main>
       <section class="hero">
@@ -482,82 +528,84 @@
       </section>
     </main>
     <!-- Низ странички -->
-    <!-- <footer class="dark-bg footer">
+    <footer class="dark-bg footer">
       <div class="container footer__container">
-        <div class="info-about">
-          <a class="link logo footer__logo" lang="en" href="">
-            <span>Web</span>Studio</a
-          >
-          <address class="address">
-            <a
-              class="link address__link"
-              href="https://goo.gl/maps/kLFrnwB74S1Tniot8"
-              >г. Киев, пр-т Леси Украинки, 26</a
+        <div class="footer__container--small">
+          <div class="info-about">
+            <a class="link logo footer__logo" lang="en" href="">
+              <span>Web</span>Studio</a
             >
-            <ul class="list">
-              <li class="address__item">
-                <a class="link" href="mailto:info@example.com"
-                  >info@example.com</a
+            <address class="address">
+              <a
+                class="link address__link"
+                href="https://goo.gl/maps/kLFrnwB74S1Tniot8"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <ul class="list">
+                <li class="address__item">
+                  <a class="link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="title--uppercase">Присоединяйтесь</p>
+            <ul class="list footer__socials">
+              <li class="footer__socials__item">
+                <a
+                  href=""
+                  class="footer__socials__icon--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="footer__socials__icon--svg">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="footer__socials__item">
+                <a
+                  href=""
+                  class="footer__socials__icon--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer__socials__icon--svg">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials__item">
+                <a
+                  href=""
+                  class="footer__socials__icon--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer__socials__icon--svg">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials__item">
+                <a
+                  href=""
+                  class="footer__socials__icon--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer__socials__icon--svg">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="title--uppercase">Присоединяйтесь</p>
-          <ul class="list footer__socials">
-            <li class="footer__socials__item">
-              <a
-                href=""
-                class="footer__socials__icon--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer__socials__icon--svg">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials__item">
-              <a
-                href=""
-                class="footer__socials__icon--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer__socials__icon--svg">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials__item">
-              <a
-                href=""
-                class="footer__socials__icon--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer__socials__icon--svg">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials__item">
-              <a
-                href=""
-                class="footer__socials__icon--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer__socials__icon--svg">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <p class="title--uppercase">Подпишитесь на рассылку</p>
@@ -656,6 +704,7 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js" ></script>
   </body>
 </html>
