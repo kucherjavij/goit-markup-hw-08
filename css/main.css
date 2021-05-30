@@ -784,14 +784,27 @@ p {
   height: 400px;
   max-width: 1600px;
   background-color: var(--dark-background);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/background-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/hero/Hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/hero/Hero.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tablet/hero/Hero.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/hero/Hero.jpg");
     height: 600px;
   }
 }
