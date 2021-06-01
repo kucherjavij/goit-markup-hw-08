@@ -22,12 +22,20 @@
 .tel-mail__item .tel-mail__link {
   display: flex;
   align-items: center;
+}
+
+.tel-mail__item .tel-mail__link--mail {
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 5px;
   }
 }
-
+.tel-mail__item .tel-mail__link--tel {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+}
 .tel-mail__icon {
   margin-right: 10px;
   fill: currentColor;
